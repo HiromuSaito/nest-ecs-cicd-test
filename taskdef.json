@@ -13,20 +13,12 @@
                   "appProtocol": "http"
               }
           ],
-          "essential": true,
-          "environment": [],
-          "environmentFiles": [],
-          "mountPoints": [],
-          "volumesFrom": [],
-          "ulimits": [],
-          "systemControls": []
+          "essential": true
       }
   ],
   "family": "cicd-example-task-definition",
   "executionRoleArn": "<EXECUTION_ROLE_ARN>",
   "networkMode": "awsvpc",
-  "revision": 1,
-  "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
       {
