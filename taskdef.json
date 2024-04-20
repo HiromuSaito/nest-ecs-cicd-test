@@ -3,7 +3,7 @@
       {
           "name": "nestjs-helloworld",
           "image": "<IMAGE1_NAME>",
-          "cpu": 0,
+          "cpu": 1024,
           "portMappings": [
               {
                   "name": "nestjs-helloworld-3000-tcp",
@@ -34,7 +34,6 @@
           "name": "ecs.capability.task-eni"
       }
   ],
-  "placementConstraints": [],
   "compatibilities": [
       "EC2",
       "FARGATE"
