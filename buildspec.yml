@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       - echo $AWS_ACCOUNT_ID
+      - echo ${AWS_ACCOUNT_ID}
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/cicd-example
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
