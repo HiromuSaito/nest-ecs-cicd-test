@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM public.ecr.aws/docker/library/node:lts-alpine3.19
 WORKDIR /app
 COPY . .
 RUN npm install
